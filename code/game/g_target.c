@@ -261,10 +261,12 @@ void SP_target_speaker( gentity_t *ent ) {
 		ent->r.svFlags |= SVF_BROADCAST;
 	}
 
+#if 0 // ZTM: PORTNOTE: Disable RTCW's speaker spawnflag 16, causes some SoF2 SP maps (pra5, col4, col8, col9) to error on load.
 	if ( ent->spawnflags & 16 ) {
 		ent->think = target_speaker_multiple;
 		ent->nextthink = level.time + 50;
 	}
+#endif
 
 	VectorCopy( ent->s.origin, ent->s.pos.trBase );
 
