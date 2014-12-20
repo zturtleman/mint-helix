@@ -1050,6 +1050,7 @@ Q3CGOBJ = \
   $(B)/$(BASEGAME)/cgame/cg_surface.o \
   $(B)/$(BASEGAME)/cgame/cg_syscalls.o \
   $(B)/$(BASEGAME)/cgame/cg_text.o \
+  $(B)/$(BASEGAME)/cgame/cg_unlagged.o \
   $(B)/$(BASEGAME)/cgame/cg_view.o \
   $(B)/$(BASEGAME)/cgame/cg_weapons.o \
   \
@@ -1096,7 +1097,8 @@ Q3CGOBJ = \
   $(B)/$(BASEGAME)/ui/ui_video.o \
   \
   $(B)/$(BASEGAME)/qcommon/q_math.o \
-  $(B)/$(BASEGAME)/qcommon/q_shared.o
+  $(B)/$(BASEGAME)/qcommon/q_shared.o \
+  $(B)/$(BASEGAME)/qcommon/q_unicode.o
 
 Q3CGVMOBJ = $(Q3CGOBJ:%.o=%.asm)
 
@@ -1145,11 +1147,13 @@ MPCGOBJ = \
   $(B)/$(MISSIONPACK)/cgame/cg_surface.o \
   $(B)/$(MISSIONPACK)/cgame/cg_syscalls.o \
   $(B)/$(MISSIONPACK)/cgame/cg_text.o \
+  $(B)/$(MISSIONPACK)/cgame/cg_unlagged.o \
   $(B)/$(MISSIONPACK)/cgame/cg_view.o \
   $(B)/$(MISSIONPACK)/cgame/cg_weapons.o \
   \
   $(B)/$(MISSIONPACK)/qcommon/q_math.o \
-  $(B)/$(MISSIONPACK)/qcommon/q_shared.o
+  $(B)/$(MISSIONPACK)/qcommon/q_shared.o \
+  $(B)/$(MISSIONPACK)/qcommon/q_unicode.o
 
 ifeq ($(USE_MISSIONPACK_Q3_UI), 1)
 MPCGOBJ += \
@@ -1258,6 +1262,7 @@ Q3GOBJ = \
   $(B)/$(BASEGAME)/game/g_target.o \
   $(B)/$(BASEGAME)/game/g_team.o \
   $(B)/$(BASEGAME)/game/g_trigger.o \
+  $(B)/$(BASEGAME)/game/g_unlagged.o \
   $(B)/$(BASEGAME)/game/g_utils.o \
   $(B)/$(BASEGAME)/game/g_weapon.o \
   \
@@ -1317,6 +1322,7 @@ MPGOBJ = \
   $(B)/$(MISSIONPACK)/game/g_target.o \
   $(B)/$(MISSIONPACK)/game/g_team.o \
   $(B)/$(MISSIONPACK)/game/g_trigger.o \
+  $(B)/$(MISSIONPACK)/game/g_unlagged.o \
   $(B)/$(MISSIONPACK)/game/g_utils.o \
   $(B)/$(MISSIONPACK)/game/g_weapon.o \
   \
