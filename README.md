@@ -1,5 +1,7 @@
 **Spearmint Soldier of Fortune II: Double Helix** game code. It is very incomplete. It's slightly better than trying to run SoF2 using Quake 3 game code.
 
+mint-helix code commits: [compare/upstream...master](https://github.com/zturtleman/mint-helix/compare/upstream...master)
+
 To use this you'll need the [Spearmint engine](https://github.com/zturtleman/spearmint).
 
   * On Windows, install [Cygwin and mingw-w64](https://github.com/zturtleman/spearmint/wiki/Compiling#windows).
